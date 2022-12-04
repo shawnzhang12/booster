@@ -20,7 +20,7 @@ describe('Creating event-handler-functions', () => {
     expect(definition.config.bindings[0].databaseName).to.be.equal('new-booster-app-app')
     expect(definition.config.bindings[0].collectionName).to.be.equal('new-booster-app-app-events-store')
     expect(definition.config.bindings[0].createLeaseCollectionIfNotExists).to.be.equal('true')
-    expect(definition.config.scriptFile).to.be.equal('../dist/index.js')
+    expect(definition.config.scriptFile).to.be.oneOf(['../dist/index.js', '..\\dist\\index.js'])
     expect(definition.config.entryPoint).to.be.equal('boosterEventDispatcher')
   })
 })

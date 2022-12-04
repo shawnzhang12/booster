@@ -111,7 +111,7 @@ describe('Creating scheduled-functions', () => {
     expect(definition.config.bindings[0].name).to.be.equal(scheduleCommandName)
     expect(definition.config.bindings[0].direction).to.be.equal('in')
     expect(definition.config.bindings[0].schedule).to.be.equal(nCronTabExpression)
-    expect(definition.config.scriptFile).to.be.equal('../dist/index.js')
+    expect(definition.config.scriptFile).to.be.oneOf(['../dist/index.js', '..\\dist\\index.js'])
     expect(definition.config.entryPoint).to.be.equal('boosterTriggerScheduledCommand')
   }
 
