@@ -1110,6 +1110,7 @@ importers:
       '@typescript-eslint/parser': ^5.0.0
       chai: 4.2.0
       chai-as-promised: 7.1.1
+      cross-env: 7.0.3
       eslint: ^8.23.1
       eslint-config-prettier: 8.3.0
       eslint-plugin-import: ^2.26.0
@@ -1150,6 +1151,7 @@ importers:
       '@typescript-eslint/parser': 5.41.0_t7ph7dpvh7g5bfovntuojbuu4i
       chai: 4.2.0
       chai-as-promised: 7.1.1_chai@4.2.0
+      cross-env: 7.0.3
       eslint: 8.26.0
       eslint-config-prettier: 8.3.0_eslint@8.26.0
       eslint-plugin-import: 2.26.0_eslint@8.26.0
@@ -1191,6 +1193,7 @@ importers:
       chai: 4.2.0
       chai-as-promised: 7.1.1
       cors: 2.8.5
+      cross-env: 7.0.3
       eslint: ^8.23.1
       eslint-config-prettier: 8.3.0
       eslint-plugin-import: ^2.26.0
@@ -1238,6 +1241,7 @@ importers:
       '@typescript-eslint/parser': 5.41.0_t7ph7dpvh7g5bfovntuojbuu4i
       chai: 4.2.0
       chai-as-promised: 7.1.1_chai@4.2.0
+      cross-env: 7.0.3
       eslint: 8.26.0
       eslint-config-prettier: 8.3.0_eslint@8.26.0
       eslint-plugin-import: 2.26.0_eslint@8.26.0
@@ -1664,7 +1668,7 @@ packages:
       '@aws-cdk/aws-codecommit': 1.179.0_aj7opj3oap3gdssa5hz4omfo2y
       '@aws-cdk/aws-codestarnotifications': 1.179.0_quico4jh3miscxbbsbvbflyavq
       '@aws-cdk/aws-ec2': 1.179.0_yohwu6y4mqebmx43wrtodhkfpq
-      '@aws-cdk/aws-ecr': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
+      '@aws-cdk/aws-ecr': 1.179.0_q4fmnsxorjylqa2b5el7ij2gni
       '@aws-cdk/aws-ecr-assets': 1.179.0_aj7opj3oap3gdssa5hz4omfo2y
       '@aws-cdk/aws-events': 1.179.0_2c6t2dpjce4beyfcc37245dnfi
       '@aws-cdk/aws-iam': 1.179.0_quico4jh3miscxbbsbvbflyavq
@@ -1672,7 +1676,7 @@ packages:
       '@aws-cdk/aws-logs': 1.179.0_oa36ahfhbsqihtei6hr4wrq4fq
       '@aws-cdk/aws-s3': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
       '@aws-cdk/aws-s3-assets': 1.179.0_oa36ahfhbsqihtei6hr4wrq4fq
-      '@aws-cdk/aws-secretsmanager': 1.179.0_3pshlrzq2z5ls3xm5s4zyf6cwe
+      '@aws-cdk/aws-secretsmanager': 1.179.0_i5c3f5zodvhstwpwdioxz2jvte
       '@aws-cdk/core': 1.179.0_wobw5cuxxyp6fekxiie3x626sy
       '@aws-cdk/region-info': 1.179.0
       constructs: 3.4.137
@@ -1839,7 +1843,7 @@ packages:
       constructs: ^3.3.69
     dependencies:
       '@aws-cdk/assets': 1.179.0_bs7morulzjijy5bmj2ufqn7rwy
-      '@aws-cdk/aws-ecr': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
+      '@aws-cdk/aws-ecr': 1.179.0_q4fmnsxorjylqa2b5el7ij2gni
       '@aws-cdk/aws-iam': 1.179.0_quico4jh3miscxbbsbvbflyavq
       '@aws-cdk/aws-s3': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
       '@aws-cdk/core': 1.179.0_wobw5cuxxyp6fekxiie3x626sy
@@ -1849,7 +1853,7 @@ packages:
       - '@aws-cdk/aws-events'
     dev: false
 
-  /@aws-cdk/aws-ecr/1.179.0_3efdynahstjsoxyvfdzqn4gn2u:
+  /@aws-cdk/aws-ecr/1.179.0_q4fmnsxorjylqa2b5el7ij2gni:
     resolution: {integrity: sha512-F/DbIxF1puZozLK8cvlgDPttWfY9g48dsYvGBInpiONWqMTeDTJI6UrZcobpLFRQUnEC3v4+gzPqlmMucsyV0g==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -1860,11 +1864,8 @@ packages:
     dependencies:
       '@aws-cdk/aws-events': 1.179.0_2c6t2dpjce4beyfcc37245dnfi
       '@aws-cdk/aws-iam': 1.179.0_quico4jh3miscxbbsbvbflyavq
-      '@aws-cdk/aws-kms': 1.179.0_4kf7eosa4r2elcpvgrozaapjtm
       '@aws-cdk/core': 1.179.0_wobw5cuxxyp6fekxiie3x626sy
       constructs: 3.4.137
-    transitivePeerDependencies:
-      - '@aws-cdk/cx-api'
     dev: false
 
   /@aws-cdk/aws-ecs/1.179.0_imsvpvaugzuh2jnowstujlpjbe:
@@ -1885,7 +1886,7 @@ packages:
       '@aws-cdk/aws-certificatemanager': 1.179.0_ied5ktv5a27k2pgambwi24nvpq
       '@aws-cdk/aws-cloudwatch': 1.179.0_2c6t2dpjce4beyfcc37245dnfi
       '@aws-cdk/aws-ec2': 1.179.0_yohwu6y4mqebmx43wrtodhkfpq
-      '@aws-cdk/aws-ecr': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
+      '@aws-cdk/aws-ecr': 1.179.0_q4fmnsxorjylqa2b5el7ij2gni
       '@aws-cdk/aws-ecr-assets': 1.179.0_aj7opj3oap3gdssa5hz4omfo2y
       '@aws-cdk/aws-elasticloadbalancing': 1.179.0_tleqdp6ulv52grcvepo3y4bda4
       '@aws-cdk/aws-elasticloadbalancingv2': 1.179.0_g5dp7u3ju7pdqn23rg6i4cw7im
@@ -1897,7 +1898,7 @@ packages:
       '@aws-cdk/aws-route53-targets': 1.179.0_g37lmkweei6jrbm7ewmx3tcp4e
       '@aws-cdk/aws-s3': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
       '@aws-cdk/aws-s3-assets': 1.179.0_oa36ahfhbsqihtei6hr4wrq4fq
-      '@aws-cdk/aws-secretsmanager': 1.179.0_3pshlrzq2z5ls3xm5s4zyf6cwe
+      '@aws-cdk/aws-secretsmanager': 1.179.0_i5c3f5zodvhstwpwdioxz2jvte
       '@aws-cdk/aws-servicediscovery': 1.179.0_g5dp7u3ju7pdqn23rg6i4cw7im
       '@aws-cdk/aws-sns': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
       '@aws-cdk/aws-sqs': 1.179.0_4kf7eosa4r2elcpvgrozaapjtm
@@ -2142,7 +2143,7 @@ packages:
       '@aws-cdk/aws-lambda': 1.179.0_cv6pey37wfi5ltjwde625jzgym
       '@aws-cdk/aws-s3': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
       '@aws-cdk/aws-s3-notifications': 1.179.0_cxavz6poknlus3y4zvvd7escxy
-      '@aws-cdk/aws-secretsmanager': 1.179.0_3pshlrzq2z5ls3xm5s4zyf6cwe
+      '@aws-cdk/aws-secretsmanager': 1.179.0_i5c3f5zodvhstwpwdioxz2jvte
       '@aws-cdk/aws-sns': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
       '@aws-cdk/aws-sns-subscriptions': 1.179.0_ozg7qrzoecxjngidkc44p3gu3q
       '@aws-cdk/aws-sqs': 1.179.0_4kf7eosa4r2elcpvgrozaapjtm
@@ -2170,7 +2171,7 @@ packages:
       '@aws-cdk/aws-cloudwatch': 1.179.0_2c6t2dpjce4beyfcc37245dnfi
       '@aws-cdk/aws-codeguruprofiler': 1.179.0_2c6t2dpjce4beyfcc37245dnfi
       '@aws-cdk/aws-ec2': 1.179.0_yohwu6y4mqebmx43wrtodhkfpq
-      '@aws-cdk/aws-ecr': 1.179.0_3efdynahstjsoxyvfdzqn4gn2u
+      '@aws-cdk/aws-ecr': 1.179.0_q4fmnsxorjylqa2b5el7ij2gni
       '@aws-cdk/aws-ecr-assets': 1.179.0_aj7opj3oap3gdssa5hz4omfo2y
       '@aws-cdk/aws-efs': 1.179.0_yohwu6y4mqebmx43wrtodhkfpq
       '@aws-cdk/aws-events': 1.179.0_2c6t2dpjce4beyfcc37245dnfi
@@ -2366,7 +2367,7 @@ packages:
       constructs: 3.4.137
     dev: false
 
-  /@aws-cdk/aws-secretsmanager/1.179.0_3pshlrzq2z5ls3xm5s4zyf6cwe:
+  /@aws-cdk/aws-secretsmanager/1.179.0_i5c3f5zodvhstwpwdioxz2jvte:
     resolution: {integrity: sha512-BzHHVVm+hlnVbNgR/JCs6vl9rR+WYhU6U2w8/pn6OnI2nqTNxnoAAjuUxcNkeBLTimmnW9nTf1Yrkk8pFi/1QQ==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -2376,18 +2377,12 @@ packages:
       '@aws-cdk/cx-api': 1.179.0
       constructs: ^3.3.69
     dependencies:
-      '@aws-cdk/aws-ec2': 1.179.0_yohwu6y4mqebmx43wrtodhkfpq
       '@aws-cdk/aws-iam': 1.179.0_quico4jh3miscxbbsbvbflyavq
-      '@aws-cdk/aws-kms': 1.179.0_4kf7eosa4r2elcpvgrozaapjtm
       '@aws-cdk/aws-lambda': 1.179.0_cv6pey37wfi5ltjwde625jzgym
       '@aws-cdk/aws-sam': 1.179.0_quico4jh3miscxbbsbvbflyavq
       '@aws-cdk/core': 1.179.0_wobw5cuxxyp6fekxiie3x626sy
       '@aws-cdk/cx-api': 1.179.0
       constructs: 3.4.137
-    transitivePeerDependencies:
-      - '@aws-cdk/assets'
-      - '@aws-cdk/aws-logs'
-      - '@aws-cdk/aws-s3'
     dev: false
 
   /@aws-cdk/aws-servicediscovery/1.179.0_g5dp7u3ju7pdqn23rg6i4cw7im:
