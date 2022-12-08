@@ -62,7 +62,7 @@ describe('PackageManager - npm Implementation', () => {
       onError: guardError('An error ocurred'),
     })
 
-    expect(TestProcess.fakes.exec).to.have.been.calledWith('npm install --production --no-bin-links --no-optional')
+    expect(TestProcess.fakes.exec).to.have.been.calledWith('npm install --omit=dev --no-bin-links --omit=optional')
   })
 
   it('can install all dependencies', async () => {
